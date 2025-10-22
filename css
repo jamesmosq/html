@@ -1,7 +1,36 @@
+Requisitos generales:
+1. Debe ser una web estática con 6 páginas  enlazadas entre sí:
+   - index.html (Inicio)
+   - about.html (Sobre el proyecto / equipo)
+   - gallery.html (Galería / ejemplos visuales) (se pueden usar cards)
+   - servicios.html (Entradas breves(contenido de serivio o lo que trate el proyecto) / servicios)
+   - blog.html (Entradas breves / artículos)
+   - contact.html (Contacto / formulario - solo HTML, sin procesamiento)
 
-leeeeeeeeeeeeeeeeeeeeeeeeeer
- aplicar css a la plantilla base que hay de html
+2. Cada archivo debe incluir:
+   - `<!doctype html>` y `<meta charset="utf-8">`.
+   - `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+   - Un `<header>` con un logo textual y un `<nav>` con enlaces a las 6 páginas (enlace activo indicado con una clase).
+   - Un `<main>` con contenido de ejemplo claro y suficiente para practicar (títulos, párrafos, listas, tarjetas, una tabla pequeña, al menos una imagen con `alt`).
+   - Un `<footer>` con información de derechos y enlaces a redes ficticias.
+   - Comentarios claros en el HTML que expliquen secciones importantes (sin dar estilos).
+   - No debe incluir ningún `<style>` ni atributos `style=""` — el objetivo es que los implementar todo el CSS externamente.
+   - Usar clases e IDs semánticos y consistentes (ejemplo: `site-nav`, `hero`, `card`, `btn-primary`, `grid`, etc.). 
+Recomienda una convención BEM pero no la obligues(es en la segunda etapa).
+   - Marcas mínimas de accesibilidad: etiquetas `label` para inputs, `alt` en imágenes,simples donde aplique.
 
-crear los sitios qiue ahi estan dispuestos en el menu en implementar secction en el contenido de las paginas
+3. Contenido por página (puedes ampliar):
+   - index.html: Hero con título y subtítulo, 3 tarjetas destacadas con icono/imagen, llamada a la acción hacia `servicios.html`.
+   - about.html: Texto del proyecto, lista de objetivos, una sección con "Equipo" que muestre 3 perfiles (foto de ejemplo, nombre, rol).
+   - gallery.html: Rejilla de imágenes (6-8) cada una en un `<figure>` con `<figcaption>`.
+   - servicios.html: Lista de 6 servicios (p. ej. "Estilizar formulario", "Crear un navbar ", "Hacer hover ", "Usar variables CSS para paleta de colores", "Implementar BEM en las clases"(aun no)). Incluir ejemplos HTML donde se espera aplicar estilos (por ejemplo, un formulario básico, una tarjeta, una lista de artículos).
+   - blog.html: 3 entradas de ejemplo en formato de "tarjeta" con fecha, extracto y enlace a la entrada completa (se puede usar `#` como href).
+   - contact.html: Formulario con campos Nombre, Email, Asunto, Mensaje y botones; incluye mensajes de ayuda y atributos `required` (sin JS).
 
-publicarla en https://www.infinityfree.com/
+4. Extra — instrucciones para los estudiantes (inclúyelas en un comentario al principio de cada archivo):
+   - Crear un archivo CSS externo `styles.css` y no usar estilos inline(NO meter css dentro del html).
+   - Tareas obligatorias: diseño responsive (mobile-first), uso de Flexbox y CSS Grid, variables CSS para colores/espaciado, tipografía (fuentes del sistema), estados (hover, focus).
+Formato de entrega (lo que debe generar- subir a un servidor- vercel – infinityfree- o  el que consultes de tu preferencia):
+- Proporciona los 6 archivos HTML completos (puedes presentarlos uno tras otro dentro de bloques de código). NO incluyas ningún script JS. (recordar la estructura base de un proyecto html)
+
+IMPORTANTE: entregar con lo que se plantea
